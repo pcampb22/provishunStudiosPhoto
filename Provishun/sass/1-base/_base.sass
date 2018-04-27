@@ -1,0 +1,41 @@
+//mixin to import google font
++google-font("Open+Sans", "100")
++google-font("Raleway", "100")
+
+ul
+  list-style-type: none
+  float: right
+
+
+ul li
+  display: inline-block
+  padding: 20px 20px
+  font-size: 14px
+  letter-spacing: 8px
+  margin: 5px 10px
+
+a
+  text-decoration: none
+  color: #fff
+  font-family: $header
+
+
+a:hover
+  color: #5F3263
+  font-weight: bold
+  letter-spacing: 5px
+
+h1
+  +header-align
+  font-family: $header
+  font-weight: 800
+  font-size: 80px
+  margin-top: 200px
+  letter-spacing: 5px
+
+h3
+  +header-align
+  font-family: $header
+  font-weight: 100
+  font-size: 30px
+  margin-top: -50px

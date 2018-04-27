@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:100");
+@import url("https://fonts.googleapis.com/css?family=Raleway:100");
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+#logo {
+  height: 100px;
+  width: 140px; }
+
+#header {
+  background-image: linear-gradient(rgba(67, 71, 80, 0.5), rgba(0, 0, 0, 0.4), transparent), url("../img/cannon2.jpg");
+  height: 1250px;
+  background-repeat: no-repeat;
+  background-position: top center; }
+
+.mainSlide {
+  height: 630px;
+  width: 80%;
+  margin: 10px auto; }
+
+.section {
+  height: 650px;
+  border-bottom: 1px solid #000; }
+
+.title {
+  background-color: #141414;
+  border-bottom: 1px solid rgba(95, 50, 99, 0.8); }
+
+ul {
+  list-style-type: none;
+  float: right; }
+
+ul li {
+  display: inline-block;
+  padding: 20px 20px;
+  font-size: 14px;
+  letter-spacing: 8px;
+  margin: 5px 10px; }
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Raleway", sans-serif; }
+
+a:hover {
+  color: #5F3263;
+  font-weight: bold;
+  letter-spacing: 5px; }
+
+h1 {
+  color: #fff;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 80px;
+  margin-top: 200px;
+  letter-spacing: 5px; }
+
+h3 {
+  color: #fff;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-weight: 100;
+  font-size: 30px;
+  margin-top: -50px; }
+
+div {
+  background-color: white;
+  width: 100%;
+  height: 500px; }
+
+nav {
+  height: 80px; }
+
+/*# sourceMappingURL=main.css.map */
