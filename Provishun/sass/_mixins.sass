@@ -4,7 +4,26 @@
 =google-font($font, $weight)
  @import url("https://fonts.googleapis.com/css?family=" + $font + ":" + $weight)
 
+=background-image-prop
+  background-color: $section
+  min-height: 800px
+  background-size: cover
+  background-position: center center
+  background-repeat: no-repeat
+  background-attachment: fixed
 
-=header-align
-  color: #fff
-  text-align: center
+=background-img($color1, $op1, $color2, $op2, $url)
+  background-image: linear-gradient(rgba($color1, $op1), rgba($color2, $op2), transparent), url($url)
+
+=left-side
+  width: 36%
+  float: left
+
+=right-side
+  float: right
+  width: 58%
+
+=container
+  width: 50%
+  height: 100%
+  margin: 0 auto
