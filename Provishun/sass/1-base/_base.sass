@@ -2,40 +2,69 @@
 +google-font("Open+Sans", "100")
 +google-font("Raleway", "100")
 
-ul
-  list-style-type: none
-  float: right
+// === header nav menu ===
+
+#navMenu
+  overflow: hidden
+  position: fixed
+  top: 0
+  width: 100%
+
+#menu ul
+  margin-top: 0px
 
 
-ul li
+#menu ul li
   display: inline-block
   padding: 20px 20px
   font-size: 14px
   letter-spacing: 8px
-  margin: 5px 10px
+  margin: 15px 10px
 
-a
+
+#menu a
   text-decoration: none
-  color: #fff
+  color: $link
   font-family: $header
+  font-weight: 200
 
 
-a:hover
-  color: #5F3263
-  font-weight: bold
-  letter-spacing: 5px
+#menu a:hover
+  color: $link-hover
+  font-weight: 600
 
-h1
-  +header-align
-  font-family: $header
-  font-weight: 800
-  font-size: 80px
-  margin-top: 200px
-  letter-spacing: 5px
 
-h3
-  +header-align
-  font-family: $header
-  font-weight: 100
-  font-size: 30px
-  margin-top: -50px
+// ==About Me Section ===
+#aboutMe article
+  +left-side
+
+#aboutMe aside
+  +right-side
+
+
+#aboutMe ul li
+  +grid-column(4)
+  height: 149.453
+  width: 60px
+  padding-right: 40px
+
+#aboutMe nav
+  padding-top: 60px
+  height: 100%
+
+  
+// == Prices Section === 
+#prices article
+  +grid-column(4)
+  margin: 150px 40px
+  border: 1px solid $dark-to-light
+  width: 330px
+  height: 380px
+
+
+//background image sections
+#background1
+  +background-img($dark-to-light, 0.5, $black, 0.4, "../img/1a.jpg")
+
+#background2
+  +background-img($dark-to-light, 0.5, $black, 0.4, "../img/9.jpg")
