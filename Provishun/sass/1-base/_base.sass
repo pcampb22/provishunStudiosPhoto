@@ -2,20 +2,17 @@
 +google-font("Open+Sans", "100")
 +google-font("Raleway", "100")
 
-// === header nav menu ===
-
-#navMenu
-  overflow: hidden
+// Header Section
+#menu
   position: fixed
   top: 0
   width: 100%
+  background-color: transparent
 
 #menu ul
   margin-top: 0px
 
-
 #menu ul li
-  display: inline-block
   padding: 20px 20px
   font-size: 14px
   letter-spacing: 8px
@@ -33,38 +30,22 @@
   color: $link-hover
   font-weight: 600
 
-
-// ==About Me Section ===
-#aboutMe article
-  +left-side
-
-#aboutMe aside
-  +right-side
+// Slide show section 
+#ethan1
+  width: 100%
 
 
-#aboutMe ul li
-  +grid-column(4)
-  height: 149.453
-  width: 60px
-  padding-right: 40px
+// introduction section
+#intro
+  padding: 80px 15%
+  background-color: darken($section, 22%)
 
-#aboutMe nav
-  padding-top: 60px
-  height: 100%
-
-  
-// == Prices Section === 
+//Prices Section
 #prices article
-  +grid-column(4)
-  margin: 150px 40px
-  border: 1px solid $dark-to-light
-  width: 330px
-  height: 380px
+  padding: 80px 10%
+  margin: 0 auto
+  background-color: darken($section, 10%)
 
 
-//background image sections
-#background1
-  +background-img($dark-to-light, 0.5, $black, 0.4, "../img/1a.jpg")
-
-#background2
-  +background-img($dark-to-light, 0.5, $black, 0.4, "../img/9.jpg")
+.background
+  min-height: 800px
