@@ -1,78 +1,104 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:100");
 @import url("https://fonts.googleapis.com/css?family=Raleway:100");
-html {
-  box-sizing: border-box; }
-
-*, *::after, *::before {
-  box-sizing: inherit; }
-
-#logo {
-  height: 100px;
+nav img {
   width: 140px; }
 
-#header {
-  background-image: linear-gradient(rgba(67, 71, 80, 0.5), rgba(0, 0, 0, 0.4), transparent), url("../img/cannon2.jpg");
-  height: 1250px;
-  background-repeat: no-repeat;
-  background-position: top center; }
-
-.mainSlide {
-  height: 630px;
-  width: 80%;
-  margin: 10px auto; }
-
-.section {
-  height: 650px;
-  border-bottom: 1px solid #000; }
-
-.title {
-  background-color: #141414;
-  border-bottom: 1px solid rgba(95, 50, 99, 0.8); }
-
-ul {
-  list-style-type: none;
-  float: right; }
-
-ul li {
-  display: inline-block;
-  padding: 20px 20px;
-  font-size: 14px;
-  letter-spacing: 8px;
-  margin: 5px 10px; }
-
-a {
-  text-decoration: none;
-  color: #fff;
-  font-family: "Raleway", sans-serif; }
-
-a:hover {
-  color: #5F3263;
-  font-weight: bold;
-  letter-spacing: 5px; }
-
 h1 {
-  color: #fff;
-  text-align: center;
+  display: inline-block;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 80px;
-  margin-top: 200px;
-  letter-spacing: 5px; }
+  letter-spacing: 5px;
+  margin-top: 900px; }
 
 h3 {
-  color: #fff;
-  text-align: center;
   font-family: "Raleway", sans-serif;
   font-weight: 100;
-  font-size: 30px;
-  margin-top: -50px; }
+  font-size: 30px; }
 
-div {
-  background-color: white;
+h2 {
+  color: #D99197; }
+
+h4 {
+  color: #fff; }
+
+p {
+  color: #CFD4DD; }
+
+#menu {
+  position: fixed;
+  top: 0;
   width: 100%;
-  height: 500px; }
+  background-color: transparent; }
 
-nav {
-  height: 80px; }
+#menu ul {
+  margin-top: 0px; }
+
+#menu ul li {
+  padding: 20px 20px;
+  font-size: 14px;
+  letter-spacing: 8px;
+  margin: 15px 10px; }
+
+#menu a {
+  text-decoration: none;
+  color: #D99197;
+  font-family: "Raleway", sans-serif;
+  font-weight: 200; }
+
+#menu a:hover {
+  color: #7A818F;
+  font-weight: 600; }
+
+#ethan1 {
+  width: 100%; }
+
+#intro {
+  padding: 80px 15%;
+  background-color: #101113; }
+
+#prices article {
+  padding: 80px 10%;
+  margin: 0 auto;
+  background-color: #2c2e34; }
+
+.background {
+  min-height: 800px; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-width: 100%;
+  width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  height: 100%;
+  max-height: 100%; }
+
+header {
+  background-image: linear-gradient(#434750, rgba(0, 0, 0, 0.5), transparent), url("../img/cannon2.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: top center;
+  height: 1400px;
+  text-align: center; }
+
+aside {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px; }
+
+#background1 {
+  background-image: linear-gradient(rgba(67, 71, 80, 0.5), rgba(0, 0, 0, 0.4), transparent), url("http://via.placeholder.com/900x450");
+  background-color: #000;
+  min-height: 650px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+#background2 {
+  background-image: linear-gradient(rgba(67, 71, 80, 0.5), rgba(0, 0, 0, 0.4), transparent), url("../img/9.jpg"); }
 
 /*# sourceMappingURL=main.css.map */
