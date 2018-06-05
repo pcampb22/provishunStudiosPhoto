@@ -1,69 +1,294 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:100");
 @import url("https://fonts.googleapis.com/css?family=Raleway:100");
-nav img {
-  width: 140px; }
-
+@import url("https://fonts.googleapis.com/css?family=Poppins:400");
+@font-face {
+  font-family: Hiroshima;
+  src: url("../fonts/Hiroshima.woff2") format("woff2"), url("../fonts/Hiroshima.woff") format("woff"), url("../fonts/Hiroshima.ttf") format("truetype"); }
 h1 {
   display: inline-block;
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  font-size: 80px;
+  font-family: "Hiroshima";
+  font-size: 5.5em;
+  line-height: 150px;
   letter-spacing: 5px;
-  margin-top: 900px; }
+  margin-top: 25%;
+  margin-bottom: 30px;
+  color: #fff;
+  width: 100%;
+  text-shadow: 10px 10px 10px #000; }
+
+h2 {
+  font-family: "Raleway", sans-serif;
+  color: #545454;
+  letter-spacing: 2px; }
 
 h3 {
   font-family: "Raleway", sans-serif;
-  font-weight: 100;
-  font-size: 30px; }
-
-h2 {
-  color: #D99197; }
+  font-weight: 500;
+  color: #c3c5ce; }
 
 h4 {
-  color: #fff; }
+  color: #434750; }
 
 p {
-  color: #CFD4DD; }
+  color: #c3c5ce; }
+
+ul {
+  list-style-type: none; }
+
+.navbar-toggler {
+  float: right;
+  clear: both;
+  margin: 20px; }
+
+.navbar-brand {
+  width: 120px;
+  margin-left: 10px;
+  float: left;
+  clear: both; }
+
+.btn-main {
+  background-color: transparent;
+  border: 1px solid #fff;
+  padding: 10px 30px;
+  color: #fff;
+  box-shadow: -5px 5px 3px 2px rgba(45, 45, 45, 0.36); }
+
+.btn-main:hover {
+  background-color: #7A818F;
+  color: firebrick;
+  text-decoration: none; }
+
+.btn-primary {
+  border: none; }
+
+.backhead {
+  font-size: 5.5em;
+  font-family: sans-serif;
+  font-weight: 700;
+  color: rgba(70, 70, 70, 0.18);
+  z-index: -1; }
+
+.frontTitle {
+  color: #fff;
+  font-size: 3.7em;
+  z-index: 1;
+  position: relative;
+  top: -66px;
+  font-weight: 500; }
+
+#home span {
+  margin: auto;
+  padding: 10px 40px;
+  color: #fff;
+  box-shadow: 3px 3px 2px 2px #000;
+  font-size: 1.5em;
+  font-family: "Raleway", sans-serif; }
 
 #menu {
+  display: none;
   position: fixed;
-  top: 0;
   width: 100%;
-  background-color: transparent; }
+  z-index: 2;
+  top: 0px;
+  box-shadow: 0 3px 3px 2px #181818;
+  padding: 0; }
 
 #menu ul {
-  margin-top: 0px; }
+  text-align: center;
+  width: 100%;
+  margin-top: 30px; }
 
 #menu ul li {
-  padding: 20px 20px;
-  font-size: 14px;
   letter-spacing: 8px;
-  margin: 15px 10px; }
+  font-weight: 300;
+  font-size: 0.8em;
+  text-align: center;
+  padding: 15px; }
+  #menu ul li a {
+    margin-top: 30px; }
 
 #menu a {
-  text-decoration: none;
-  color: #D99197;
-  font-family: "Raleway", sans-serif;
-  font-weight: 200; }
+  color: #fff;
+  font-family: sans-serif; }
 
 #menu a:hover {
   color: #7A818F;
   font-weight: 600; }
 
-#ethan1 {
+#logo {
+  padding: 20px;
+  width: 100%;
+  display: none; }
+
+#arrow {
+  margin-top: 7%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 5%;
+  border-radius: 50%; }
+  #arrow i {
+    color: #fff;
+    padding: 3px; }
+
+#intro h4 {
+  color: #fff;
+  text-transform: uppercase; }
+
+#intro img {
   width: 100%; }
 
-#intro {
-  padding: 80px 15%;
-  background-color: #101113; }
+#intro article {
+  padding-right: 30px; }
 
-#prices article {
-  padding: 80px 10%;
-  margin: 0 auto;
-  background-color: #2c2e34; }
+#intro p, #aboutMe p {
+  text-align: justify;
+  font-weight: 100;
+  font-family: PT Sans;
+  padding-top: 15px;
+  color: #c3c5ce; }
 
-.background {
-  min-height: 800px; }
+#intro a {
+  background-color: transparent;
+  border: 1px solid #fff;
+  display: block;
+  width: 45%;
+  height: 60px;
+  margin: 10% auto 8% auto;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 1.55rem;
+  color: #fff;
+  font-weight: 100;
+  letter-spacing: 0.8px;
+  box-shadow: -5px 5px 2px rgba(70, 70, 70, 0.5); }
+
+#intro a:hover {
+  text-decoration: none;
+  background-color: #7A818F;
+  color: #0b0c11; }
+
+#intro aside img {
+  border: 2px solid #fff;
+  margin-top: 40px; }
+
+.content {
+  padding: 200px 10%;
+  background-color: #0b0c11;
+  width: 100%;
+  margin: 0;
+  color: #c3c5ce; }
+
+#photo_type {
+  padding: 100px 30px 200px 30px; }
+
+#Gallery {
+  padding-top: 200px;
+  background-color: #0b0c11;
+  /* Prevent vertical gaps */
+  line-height: 0;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 0px;
+  -moz-column-count: 3;
+  -moz-column-gap: 0px;
+  column-count: 3;
+  column-gap: 0px; }
+  @media screen and (max-width: 1024px) {
+    #Gallery {
+      -moz-column-count: 2;
+      -webkit-column-count: 2;
+      column-count: 2; } }
+  @media screen and (max-width: 700px) {
+    #Gallery {
+      -moz-column-count: 2;
+      -webkit-column-count: 2;
+      column-count: 2; } }
+  @media screen and (max-width: 400px) {
+    #Gallery {
+      -moz-column-count: 1;
+      -webkit-column-count: 1;
+      column-count: 1; } }
+
+#Gallery img {
+  /* Just in case there are inline attributes */
+  width: 100% !important;
+  height: auto !important; }
+
+#prices {
+  width: 100%;
+  margin: 0;
+  color: #464646;
+  min-height: 500px;
+  padding-bottom: 100px; }
+  #prices article {
+    text-align: center;
+    border-right: 1px solid #ccc;
+    padding: 30px;
+    width: 100%; }
+  #prices span {
+    color: firebrick;
+    font-weight: 600; }
+  #prices ol {
+    color: #c3c5ce;
+    list-style-type: none;
+    padding: 0; }
+  #prices ol li {
+    padding: 15px; }
+  #prices p {
+    font-size: 0.8em;
+    padding: 10px;
+    width: 100%; }
+  #prices div {
+    width: 100%;
+    text-align: center; }
+
+@media (max-width: 991px) {
+  #prices article {
+    padding-bottom: 60px;
+    margin-bottom: 20px;
+    border-right: none;
+    border-bottom: 1px solid; }
+    #prices article a {
+      letter-spacing: 2px; } }
+.priceTitle {
+  display: inline-block;
+  font-family: "Raleway", sans-serif;
+  font-weight: 100;
+  font-size: 30px;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 10px 50px;
+  margin: 40px auto 10px auto; }
+
+#social {
+  margin: 0; }
+  #social i {
+    color: #434750;
+    text-align: center;
+    padding: 5px;
+    margin: 30px; }
+
+#contact {
+  background-color: #0b0c11; }
+
+#myContact p {
+  margin: 50px;
+  padding: 20px; }
+  #myContact p i {
+    margin-right: 20px; }
+#myContact address {
+  margin: 50px;
+  padding: 20px; }
+  #myContact address i {
+    margin-right: 20px; }
+
+#contactForm h2 {
+  color: firebrick;
+  margin-bottom: 5%; }
+#contactForm label {
+  color: #fff; }
+
+form button {
+  width: 40%; }
 
 html, body {
   margin: 0;
@@ -76,29 +301,41 @@ html, body {
   max-height: 100%; }
 
 header {
-  background-image: linear-gradient(#434750, rgba(0, 0, 0, 0.5), transparent), url("../img/cannon2.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8), transparent), url("../img/bee/4.png");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: top center;
-  height: 1400px;
+  background-size: cover;
+  height: 100%;
   text-align: center; }
 
-aside {
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px; }
-
 #background1 {
-  background-image: linear-gradient(rgba(67, 71, 80, 0.5), rgba(0, 0, 0, 0.4), transparent), url("http://via.placeholder.com/900x450");
+  background-image: linear-gradient(rgba(11, 12, 17, 0.5), rgba(0, 0, 0, 0.4), transparent), url("../img/angel/DSC01733.png");
   background-color: #000;
   min-height: 650px;
-  width: 100%;
   background-size: cover;
-  background-position: center center;
+  background-position: top center;
   background-repeat: no-repeat;
   background-attachment: fixed; }
 
-#background2 {
-  background-image: linear-gradient(rgba(67, 71, 80, 0.5), rgba(0, 0, 0, 0.4), transparent), url("../img/9.jpg"); }
+.wrapper {
+  margin: auto; }
+
+#photo {
+  background-color: #0b0c11;
+  width: 100%;
+  padding: 30px;
+  font-family: "Raleway", sans-serif; }
+  #photo i {
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    margin-top: 10%; }
+  #photo h4 {
+    color: #fff;
+    text-align: center;
+    padding: 30px; }
+  #photo h2 {
+    font-size: 72px; }
 
 /*# sourceMappingURL=main.css.map */
