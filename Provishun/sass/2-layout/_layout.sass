@@ -12,23 +12,20 @@ html, body
 
 
 header
-  +background-img($dark-to-light, 1.0,  $black, 0.5, "../img/cannon2.jpg")
+  +background-img($black, 0.2,  $black, 0.8, "../img/bee/4.png")
   background-attachment: fixed
   background-repeat: no-repeat
   background-position: top center
-  height: 1400px
+  background-size: cover
+  height: 100%
   text-align: center
-
-aside
-  margin-left: auto
-  margin-right: auto
-  padding: 10px
 
 
 
 #background1
-  +background-img($dark-to-light, 0.5, $black, 0.4, "http://via.placeholder.com/900x450")
-  +background-image-prop($black, 650px, 100%)
+  +background-img($content, 0.5, $black, 0.4, "../img/angel/DSC01733.png")
+  +background-image-prop($black, 650px)
 
-#background2
-  +background-img($dark-to-light, 0.5, $black, 0.4, "../img/9.jpg")
+
+.wrapper
+  margin: auto
