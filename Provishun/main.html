@@ -1,57 +1,104 @@
-<!-- 
+
+<!--
 Created By: Phylicia Campbell
-Last Update: 2 May 2018
+Last Update: 5 June 2018
 Description: Photography Front End Design utilizing HTML, CSS, JavaScript, Bootstrap, and SASS.
 -->
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>ProVishun Studio</title>
-    <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-
   </head>
   <body>
     <!-- Nav Bar-->
-    <nav id="menu" class="navbar navbar-expand-lg">
-      <a class="navbar-brand" href="#">
-      <!--  Logo Image -->
-      </a>
-      <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Gallery</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Booking</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-   
-  <!-- Header -->  
-    <header class="container-fluid">
+  <nav id="menu" class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#">
+       <img id="logo" src="img/logo1.svg" alt="provishunStudio_logo">
+     </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav justify-content-end mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#aboutMe">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#prices">Pricing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Gallery">Gallery</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact Us</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+  <!-- Header -->
+    <header id="home" class="container-fluid">
        <h1>ProVishun Studio</h1>
-       <h3>+ Photography</h3>
+       <span>+ Photography</span>
+       <div id="arrow"><a href="#intro"><i class="fas fa-chevron-down fa-2x"></i></a>
+       </div>
     </header>
   <!--- end of header -->
 
-  <main>
+  <main class="wrapper">
+
+
+    <!-- Introduction Section -->
+    <section class="row content" id="intro">
+      <article class="col-lg-6 col-md-12 col-sm-12">
+        <!--Welcome to Provishun Studio -->
+        <h2 class="backhead">welcome</h2>
+        <h3 class="frontTitle">ProVishun Studio</h3>
+        <h4>It's more than a Photo, it's a story</h4>
+          <p>Hey! My name is Phylicia Campbell and I am a web developer and photographer based
+            in the Houston, TX area where I explore my creative passions by designing
+            cool things for various brands and clients throughout the Midwest region.</p>
+            <p> Provishun Studio, offers photography, web design, and branding.
+            This company is dedicated to emerging technologies to provide an outstanding service, an
+            enjoyable experience, and the highest level of quality products and services. Our job is to
+            MAKE YOU LOOK GOOD! If you enjoy my work, don't hesitate to reach out.</p>
+        <a href="#">Learn More</a>
+      </article>
+
+      <aside class="col-lg-6 col-md-12 col-sm-12">
+          <img src="img/bee/2.png" />
+      </aside>
+    </section> <!-- end of introduction section -->
+
+    <!-- services -->
+    <!--<section id="photo_type" class="content row text-center">
+      <div class="col-lg-3 col-md-3 col-sm-12">
+      <h2>7</h2>
+      <h3>Portrait</h3>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-12">
+      <h2>7</h2>
+      <h3>HeadShots</h3>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-12">
+      <h2>7</h2>
+      <h3>Small Business</h3>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-12">
+      <h2>7</h2>
+      <h3>E-Commerce</h3>
+    </div>
+  </section>-->
+
+
     <section id=#slide_show>
       <!-- slide show of photography images -->
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -59,17 +106,40 @@ Description: Photography Front End Design utilizing HTML, CSS, JavaScript, Boots
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="d-block w-100" src="img/ethan2.png" alt="First slide">
+            <img class="d-block w-100" src="img/redhead/1.png" alt="First slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="img/ethan1.png" alt="Second slide">
+            <img class="d-block w-100" src="img/angel/DSC01733.png" alt="Eighth slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="img/1a.jpg" alt="Third slide">
+            <img class="d-block w-100" src="img/lex/1a.jpg" alt="Third slide">
           </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/ethan/ethan1.png" alt="Fifth slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/redhead/2.png" alt="Fourth slide">
+          </div>
+
+
+
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/ethan/eFlex2.png" alt="Sixth slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/9.jpg" alt="Seventh slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/bee/1.png" alt="Second slide">
+          </div>
+
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -80,99 +150,158 @@ Description: Photography Front End Design utilizing HTML, CSS, JavaScript, Boots
           <span class="sr-only">Next</span>
         </a>
       </div>
-    </section> 
+    </section>
     <!-- end of slide show section -->
 
-    <!-- Introduction Section -->
-    <section class="row" id="intro">
-      <article class="col-lg-6 col-md-12 col-sm-12">
-        <!--Welcome to Provishun Studio -->
-        <h4>Welcome to Provishun Studio</h4>
-        <h2>Content placed here about provishun studio. Call to action message
-            can go here</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
-          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
-          deserunt mollit anim id est laborum. Explain some info here and go more in 
-          depth about some stuff
-        </p>
-        <button>Book Now</button>
-      </article>
-        
-      <aside class="col-lg-6 col-md- 12 col-sm-12">
-        <img src="http://via.placeholder.com/550x350" alt="">
-      </aside>
+    <!-- Prices Section -->
+    <!-- Description: 3 articles with types of photography (street, portrait, landscape) and starting prices -->
+    <section id="prices" class="container-fluid content row">
+    <div>
+      <h2 class="backhead">How Much?</h2>
+      <h3 class="frontTitle">Service Price</h3>
+    </div>
+
+      <article class="col-lg-4 col-md-12">
+       <h3 class="priceTitle">Starting at <span>$65</span></h3>
+        <ol>
+          <li>1 Hour</li>
+          <li>1 Location</li>
+          <li>2 Outfits</li>
+        </ol>
+        <p><em>Provide desired date and time</em></p>
+        <a class="btn-main" href="mailto:provishunstudio@gmail.com?subject=1Hr%20Inquiry">Get Quote</a>
+     </article>
+
+     <article class="col-lg-4 col-md-12">
+        <h3 class="priceTitle">Starting at <span>$100</span></h3>
+       <ol>
+         <li>2 Hours</li>
+         <li>2 Locations</li>
+         <li>4 Outfits</li>
+       </ol>
+       <p><em>Provide desired date and time</em></p>
+       <a class="btn-main" href="mailto:provishunstudio@gmail.com?subject=2Hr%20Inquiry">Get Quote</a>
+     </article>
+
+     <article class="col-lg-4 col-md-12">
+        <h3 class="priceTitle">Starting at <span>$250</span></h3>
+       <ol>
+         <li>3 Hours</li>
+         <li>3 Locations</li>
+         <li>Unlimited Outfits</li>
+       </ol>
+       <p><em>Provide desired date and time</em></p>
+       <a class="btn-main" href="mailto:provishunstudio@gmail.com?subject=3Hr%20Inquiry">Get Quote</a>
+     </article>
+
+    </section>
+
+
+
+    <section class="content" id="Gallery">
+
+          <img src="img/ethan/eFlex1.png" /> <!-- lex flexwood shoot -->
+          <img id="shear" src="img/bee/3.png" /> <!-- shear confidence photoshot -->
+          <img src="img/lex/1a.jpg" />
+          <img src="img/angel/DSC01699.png" /> <!-- landscape -->
+          <img src="img/redhead/2.png" />
+          <img id="ethanFlex" src="img/ethan/eFlex2.png" /> <!-- ethan flexwood shoot -->
+          <div id="photo">
+            <i class="fas fa-camera-retro fa-7x"></i>
+            <h4>Photo Gallery</h4>
+          </div>
+          <img src="img/redhead/1.png" />
+          <img src="img/ethan/ethan1.png" /> <!-- ethan shear confidence shoot-->
+          <img src="img/bee/2.png" /> <!-- white girl shear confidence shoot -->
+
     </section> <!-- end of introduction section -->
 
 
     <!-- Background section -->
     <section class="background" id="background1">
     <!-- Empty section for background image -->
+
     </section>
 
 
-    <!-- Prices Section -->
-    <!-- Description: 3 articles with types of photography (street, portrait, landscape) and starting prices -->
-    <section class="row text-center" id="prices">
-     <article class="col-lg-4 col-sm-12 col-sm-12">
-       <figure>
-         <img src="http://via.placeholder.com/300x250" alt="">
-        </figure>
-     </article>
-
-     <article class="col-lg-4 col-sm-12 col-sm-12">
-       <figure>
-         <img src="http://via.placeholder.com/300x250" alt="">
-       </figure>
-     </article>
-
-     <article class="col-lg-4 col-md-12 col-sm-12">
-       <figure>
-          <img src="http://via.placeholder.com/300x250" alt="">
-       </figure>
-     </article>
-    </section> <!-- End of prices section -->
-
 <!-- About Photographer section -->
-    <section class="content" id="aboutMe">
-     <article>
-       <article>
-         <h2> Name Goes Here</h2>
+    <section class="content row" id="aboutMe">
+       <article class="col-lg-6 col-sm-12">
+         <div>
+         <h2 class="backhead">who am I?</h2>
+         <h3 class="frontTitle">Our Mission</h3>
+       </div>
           <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
           </p>
       </article>
-      <aside>
+      <aside class="col-lg-6 col-sm-12">
       <!-- Social Media Links -->
-       <nav id="socialMedia">
-        <ul>
-         <li><a href="#"><i class="fab fa-instagram fa-5x"></i></a></li>
-         <li><a href="#"><i class="fab fa-facebook-f fa-5x"></i></a></li>
-         <li><a href="#"><i class="fab fa-twitter fa-5x"></i></a></li>
+        <ul id="social" class="row">
+         <li class="col-lg-4 col-sm-4"><a href="http://instagram.com/provishun_studio"><i class="fab fa-instagram fa-5x"></i></a></li>
+         <li class="col-lg-4 col-sm-4"><a href="#"><i class="fab fa-facebook-f fa-5x"></i></a></li>
+         <li class="col-lg-4 col-sm-4"><a href="#"><i class="fab fa-twitter fa-5x"></i></a></li>
         </ul>
-       </nav>
      </aside>
-    </article>
+
    </section>
   <!-- End of About Photographer Section-->
 
   </main> <!-- end of main div-->
 
-  <footer class="content">
+  <footer class="row content" id="contact">
    <!-- contact information-->
+    <div class="col-lg-6 col-md-6 col-sm-12" id="myContact">
+
+      <p><i class="fas fa-phone fa-2x"></i>305.965.0278</p>
+      <address><i class="fas fa-map-marker-alt fa-2x"></i>Houston, TX</address>
+      <p><i class="far fa-envelope fa-2x"></i>ProVishunStudio@gmail.com</p>
+    </div>
+
+    <div class="col-lg-6 col-md-6 col-sm-12" id="contactForm">
+      <h2> Want to Hire Me? </h2>
+      <form>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputName">Email</label>
+          <input type="text" class="form-control" id="inputName" placeholder="First and Last Name">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputEmail4">Email</label>
+          <input type="email" class="form-control" id="inputEmail4" placeholder="youremail@email.com">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputSubject">Subject</label>
+        <input type="text" class="form-control" id="inputSubject" placeholder="">
+      </div>
+      <div class="form-group">
+        <label for="inputMessage">Message</label>
+        <textarea name="Message" class="form-control" id="inputMessage" rows="8" cols="80"></textarea>
+      </div>
+
+
+      <button type="submit" class="btn btn-primary btn-main">Submit</button>
+    </form>
+    </div>
+  </footer>
+  <footer>
    <!-- a form for inquiries -->
   <p>&copy; Copyright 2018</p>
   </footer>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="css/bootstrap/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script type="text/javascript" src="js/main.js"></script>
-  
+
+
+
   </body>
 </html>
